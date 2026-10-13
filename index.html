@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voyanta | Ultra-Premium World-Class Luxury Travel & Expeditions</title>
+  <meta name="description" content="Voyanta is an ultra-premium international luxury travel agency crafting bespoke journeys, private jet tours, 5-star sanctuaries, and unforgettable global expeditions.">
+  <meta name="keywords" content="luxury travel, ultra premium tourism, private yacht charters, bespoke travel planner, 5-star hotels, Switzerland, Dubai, Maldives, Japan, Hunza, Voyanta">
+  <meta name="theme-color" content="#070d1e">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Voyanta | Ultra-Premium Luxury Travel & Expeditions">
+  <meta property="og:description" content="Discover unforgettable destinations, extraordinary experiences, and journeys designed around you.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./responsive.css">
+
+  <!-- JSON-LD Structured Data for Travel Agency SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TravelAgency",
+    "name": "Voyanta",
+    "description": "Ultra-premium international travel brand offering signature expeditions and private concierge itineraries.",
+    "url": "https://voyanta-luxury.com",
+    "telephone": "+1-800-869-2682",
+    "email": "concierge@voyanta-luxury.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "450 Park Avenue, 28th Floor",
+      "addressLocality": "New York",
+      "addressRegion": "NY",
+      "postalCode": "10022",
+      "addressCountry": "US"
+    },
+    "priceRange": "$$$$"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. LUXURY STICKY NAVIGATION BAR
+       ========================================================================= -->
+  <header class="navbar-wrapper" id="navbarWrapper">
+    <div class="container navbar">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="Voyanta Home">
+        <span class="logo-mark">V</span>
+        <span>Voyanta<span class="gold-dot">.</span></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#destinations" class="nav-link">Destinations</a>
+        <a href="#packages" class="nav-link">Packages</a>
+        <a href="#planner" class="nav-link">Trip Planner</a>
+        <a href="#experiences" class="nav-link">Experiences</a>
+        <a href="#hotels" class="nav-link">Hotels</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Right Action Controls -->
+      <div class="nav-actions">
+        <!-- Currency Selector -->
+        <div class="currency-selector">
+          <button class="currency-btn" id="currencyBtn" aria-label="Select Currency">
+            <span id="currentCurrencyLabel">USD</span>
+            <span style="font-size:0.7rem;">▼</span>
+          </button>
+          <div class="currency-dropdown" id="currencyDropdown">
+            <button class="currency-option" data-currency="USD">USD ($)</button>
+            <button class="currency-option" data-currency="EUR">EUR (€)</button>
+            <button class="currency-option" data-currency="GBP">GBP (£)</button>
+          </div>
+        </div>
+
+        <!-- Wishlist Button -->
+        <button class="nav-icon-btn" id="navWishlistBtn" title="View Curated Wishlist" aria-label="View Wishlist">
+          <span>♡</span>
+          <span class="badge-count" id="wishlistBadge">0</span>
+        </button>
+
+        <!-- User Profile / Dashboard Button -->
+        <button class="nav-icon-btn" id="navUserBtn" title="Voyanta Private Member Portal" aria-label="Open User Dashboard">
+          <span>👤</span>
+        </button>
+
+        <!-- Primary CTA -->
+        <a href="#packages" class="btn btn-primary btn-sm" id="navExploreCta">Explore Trips</a>
+
+        <!-- Mobile Toggle -->
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
+    <div>
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:32px;">
+        <span class="brand-logo" style="font-size:1.4rem;">
+          <span class="logo-mark" style="width:32px; height:32px; font-size:0.95rem;">V</span>
+          Voyanta
+        </span>
+      </div>
+      <div class="mobile-nav-links">
+        <a href="#hero" class="mobile-nav-link">Home</a>
+        <a href="#destinations" class="mobile-nav-link">Destinations</a>
+        <a href="#packages" class="mobile-nav-link">Featured Packages</a>
+        <a href="#planner" class="mobile-nav-link">Trip Planner</a>
+        <a href="#experiences" class="mobile-nav-link">Experiences</a>
+        <a href="#hotels" class="mobile-nav-link">Hotels & Stays</a>
+        <a href="#gallery" class="mobile-nav-link">Travel Gallery</a>
+        <a href="#faq" class="mobile-nav-link">FAQ</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+      </div>
+    </div>
+    <div>
+      <a href="#packages" class="btn btn-gold" style="width:100%; margin-bottom:12px;">Explore Journeys</a>
+      <p style="font-size:0.8rem; color:rgba(255,255,255,0.5); text-align:center;">Voyanta Concierge: +1 (800) 869-2682</p>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       2. CINEMATIC HERO SECTION
+       ========================================================================= -->
+  <section class="hero-section" id="hero">
+    <div class="hero-bg-layer">
+      <img class="hero-bg-img" src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&w=1920&q=80" alt="Cinematic luxury travel destination scenery">
+      <div class="hero-overlay-gradient"></div>
+      <div class="hero-ambient-glow"></div>
+    </div>
+
+    <!-- Floating Teaser Card Left (Switzerland) -->
+    <div class="hero-floating-card card-left-pos" onclick="document.getElementById('destinations').scrollIntoView({behavior:'smooth'})">
+      <img class="floating-card-thumb" src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=200&q=80" alt="Zermatt Switzerland">
+      <div class="floating-card-info">
+        <h4>Swiss Alps Chalet</h4>
+        <p>Starting from $3,450</p>
+        <span class="floating-card-tag">★ 4.98 Rating</span>
+      </div>
+    </div>
+
+    <!-- Floating Teaser Card Right (Maldives) -->
+    <div class="hero-floating-card card-right-pos" onclick="document.getElementById('destinations').scrollIntoView({behavior:'smooth'})">
+      <img class="floating-card-thumb" src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=200&q=80" alt="Maldives Overwater Sanctuary">
+      <div class="floating-card-info">
+        <h4>Azure Maldives</h4>
+        <p>Private Lagoon Villa</p>
+        <span class="floating-card-tag">★ 4.99 Rating</span>
+      </div>
+    </div>
+
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="sparkle">✦</span>
+          <span>World-Class Private Expeditions & Sanctuaries</span>
+        </div>
+
+        <h1 class="hero-title">
+          Explore Beyond. <br>
+          <span class="text-gradient">Experience</span> <span class="text-gold">More.</span>
+        </h1>
+
+        <p class="hero-desc">
+          Discover unforgettable destinations, extraordinary experiences, and journeys designed around you with uncompromised five-star concierge precision.
+        </p>
+
+        <!-- Sophisticated Floating Search Interface -->
+        <div class="search-container-card">
+          <div class="search-tabs">
+            <button class="search-tab-btn active" type="button"><span>✈️</span> Signature Tours</button>
+            <button class="search-tab-btn" type="button" onclick="document.getElementById('hotels').scrollIntoView({behavior:'smooth'})"><span>🏨</span> Luxury Stays</button>
+            <button class="search-tab-btn" type="button" onclick="document.getElementById('experiences').scrollIntoView({behavior:'smooth'})"><span>⛵</span> Private Charters</button>
+          </div>
+
+          <form class="search-form-grid" id="heroSearchForm">
+            <div class="search-field-group">
+              <label for="heroDestSelect">📍 Where do you want to go?</label>
+              <select id="heroDestSelect">
+                <!-- Dynamically populated -->
+              </select>
+            </div>
+
+            <div class="search-field-group">
+              <label for="heroDatesInput">🗓️ Travel Dates</label>
+              <input type="text" id="heroDatesInput" placeholder="Oct 2026 - Dec 2026" value="Autumn / Winter 2026">
+            </div>
+
+            <div class="search-field-group">
+              <label for="heroTravelersInput">👥 Travelers</label>
+              <select id="heroTravelersInput">
+                <option value="2 Guests">2 Guests (Couple)</option>
+                <option value="1 Guest">1 Guest (Solo Luxury)</option>
+                <option value="4 Guests">4 Guests (Family Suite)</option>
+                <option value="6+ Guests">6+ Guests (Private Group)</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary search-submit-btn" id="heroSearchBtn">
+              <span>Explore</span>
+              <span>→</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Hero Stats Strip -->
+        <div class="hero-stats-strip">
+          <div class="hero-stat-item">
+            <div class="hero-stat-icon">✓</div>
+            <span>100% Tailored Private Itineraries</span>
+          </div>
+          <div class="hero-stat-item">
+            <div class="hero-stat-icon">★</div>
+            <span>24/7 Dedicated Concierge & Chauffeur</span>
+          </div>
+          <div class="hero-stat-item">
+            <div class="hero-stat-icon">🛡️</div>
+            <span>Bonded & Insured Luxury Travel Guarantee</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       3. TRAVEL STATISTICS (Intersection Observer Animated Counters)
+       ========================================================================= -->
+  <section class="stats-section" id="statisticsSection">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number" data-target="120" data-suffix="+">0</div>
+          <div class="stat-label">Destinations</div>
+          <div class="stat-sub">Curated Across 6 Continents</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="25" data-suffix="K+">0</div>
+          <div class="stat-label">Happy Travelers</div>
+          <div class="stat-sub">Discerning Global Voyagers</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="850" data-suffix="+">0</div>
+          <div class="stat-label">Travel Experiences</div>
+          <div class="stat-sub">Handcrafted Private Journeys</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="4.9" data-suffix="/5">0</div>
+          <div class="stat-label">Average Rating</div>
+          <div class="stat-sub">From Over 14,000 Verified Reviews</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. DESTINATIONS DISCOVERY SECTION
+       ========================================================================= -->
+  <section class="destinations-section" id="destinations">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Iconic Sanctuaries</span>
+        <h2 class="section-title">Discover World-Renowned Destinations</h2>
+        <p class="section-subtitle">
+          From snow-draped Swiss peaks and futuristic Arabian skylines to the emerald atolls of the Maldives, each Voyanta destination is personally verified for supreme elegance.
+        </p>
+      </div>
+
+      <!-- Category Filter Chips -->
+      <div class="dest-filter-bar">
+        <button class="dest-filter-chip active" data-category="all">All Destinations</button>
+        <button class="dest-filter-chip" data-category="Europe">Europe</button>
+        <button class="dest-filter-chip" data-category="Asia">Asia</button>
+        <button class="dest-filter-chip" data-category="Middle East">Middle East</button>
+      </div>
+
+      <!-- Destinations Grid (Populated via data.js) -->
+      <div class="destinations-grid" id="destinationsGrid"></div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. FEATURED TOUR PACKAGES
+       ========================================================================= -->
+  <section class="packages-section" id="packages">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Signature Collections</span>
+        <h2 class="section-title">Featured Tour Packages</h2>
+        <p class="section-subtitle">
+          Turnkey luxury expeditions complete with first-class transfers, helicopter charters, 5-star sanctuary suites, and Michelin-starred culinary celebrations.
+        </p>
+      </div>
+
+      <!-- Packages Grid (Populated via data.js) -->
+      <div class="packages-grid" id="packagesGrid"></div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. INTERACTIVE TRIP PLANNER
+       ========================================================================= -->
+  <section class="planner-section" id="planner">
+    <div class="container">
+      <div class="section-header" style="color:#ffffff;">
+        <span class="section-tag" style="background:rgba(212,175,55,0.15); color:var(--color-gold); border-color:rgba(212,175,55,0.3);">
+          AI & Concierge Precision
+        </span>
+        <h2 class="section-title" style="color:#ffffff;">Interactive Bespoke Trip Planner</h2>
+        <p class="section-subtitle" style="color:rgba(255,255,255,0.8);">
+          Configure your travel style, preferences, and budget to immediately generate a personalized itinerary tailored to your standard of luxury.
+        </p>
+      </div>
+
+      <div class="planner-container-box">
+        <div class="planner-steps-nav">
+          <div class="step-indicator active">
+            <span class="step-bubble">1</span>
+            <span>Destination & Dates</span>
+          </div>
+          <div class="step-indicator active">
+            <span class="step-bubble">2</span>
+            <span>Travel Style</span>
+          </div>
+          <div class="step-indicator active">
+            <span class="step-bubble">3</span>
+            <span>Budget & Party</span>
+          </div>
+          <div class="step-indicator active">
+            <span class="step-bubble">4</span>
+            <span>Curated Summary</span>
+          </div>
+        </div>
+
+        <!-- Primary Form Inputs -->
+        <div class="planner-grid-inputs">
+          <div class="planner-input-group">
+            <label for="plannerDestSelect">Destination of Choice</label>
+            <select class="planner-select" id="plannerDestSelect">
+              <!-- Populated via data.js -->
+            </select>
+          </div>
+
+          <div class="planner-input-group">
+            <label for="plannerDates">Preferred Season or Month</label>
+            <input type="text" class="planner-input" id="plannerDates" placeholder="e.g. October 2026" value="Autumn / Winter 2026">
+          </div>
+
+          <div class="planner-input-group">
+            <label for="plannerTravelers">Number of Travelers</label>
+            <input type="number" class="planner-input" id="plannerTravelers" value="2" min="1" max="20">
+          </div>
+        </div>
+
+        <!-- Travel Style Selector -->
+        <div class="style-selector-title">Select Your Travel Style</div>
+        <div class="travel-style-grid">
+          <div class="style-card-btn" data-style="Adventure">
+            <div class="style-card-icon">🧗</div>
+            <div class="style-card-name">Adventure</div>
+          </div>
+          <div class="style-card-btn selected" data-style="Luxury">
+            <div class="style-card-icon">👑</div>
+            <div class="style-card-name">Ultra-Luxury</div>
+          </div>
+          <div class="style-card-btn" data-style="Family">
+            <div class="style-card-icon">👨‍👩‍👧‍👦</div>
+            <div class="style-card-name">Family Grand</div>
+          </div>
+          <div class="style-card-btn" data-style="Romantic">
+            <div class="style-card-icon">🥂</div>
+            <div class="style-card-name">Romantic Haven</div>
+          </div>
+          <div class="style-card-btn" data-style="Cultural">
+            <div class="style-card-icon">🏛️</div>
+            <div class="style-card-name">Cultural Heritage</div>
+          </div>
+          <div class="style-card-btn" data-style="Relaxation">
+            <div class="style-card-icon">🌿</div>
+            <div class="style-card-name">Zen Relaxation</div>
+          </div>
+        </div>
+
+        <!-- Budget Range Slider -->
+        <div class="budget-slider-wrapper">
+          <div class="budget-header">
+            <label style="font-size:0.85rem; font-weight:700; color:var(--color-gold); text-transform:uppercase;">
+              Desired Total Journey Budget
+            </label>
+            <span class="budget-val-display" id="plannerBudgetDisplay">$12,000</span>
+          </div>
+          <input type="range" class="budget-slider" id="plannerBudgetSlider" min="2500" max="35000" step="500" value="12000">
+          <div style="display:flex; justify-content:space-between; font-size:0.75rem; color:rgba(255,255,255,0.6); margin-top:6px;">
+            <span>$2,500 (Boutique)</span>
+            <span>$15,000 (Signature Luxury)</span>
+            <span>$35,000+ (Presidential / Royal)</span>
+          </div>
+        </div>
+
+        <button type="button" class="btn btn-gold planner-generate-btn" id="plannerGenerateBtn">
+          Generate Bespoke Itinerary & Quote ✨
+        </button>
+
+        <!-- Dynamic Output Container -->
+        <div class="planner-result-card" id="plannerResultCard"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. EXPERIENCES SECTION
+       ========================================================================= -->
+  <section class="experiences-section" id="experiences">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Extraordinary Dimensions</span>
+        <h2 class="section-title">Curated Travel Experiences</h2>
+        <p class="section-subtitle">
+          Whether you crave high-altitude adrenaline, private atoll serenity, or private evening viewings of world wonders, explore our eight signature travel dimensions.
+        </p>
+      </div>
+
+      <!-- Experiences Grid (Populated via data.js) -->
+      <div class="experiences-grid" id="experiencesGrid"></div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       8. HOTELS & STAYS (With Working Dynamic Filters)
+       ========================================================================= -->
+  <section class="hotels-section" id="hotels">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Sanctuaries of Rest</span>
+        <h2 class="section-title">World-Class Hotels & Private Stays</h2>
+        <p class="section-subtitle">
+          Stay in the world's most prestigious five-star properties, heritage palaces, overwater villas, and mountain chalets with guaranteed Voyanta VIP amenities.
+        </p>
+      </div>
+
+      <!-- Live Dynamic Filter Bar -->
+      <div class="hotels-filter-panel">
+        <div class="hotel-filter-item">
+          <label for="hotelFilterType">Property Type</label>
+          <select class="hotel-filter-select" id="hotelFilterType">
+            <option value="all">All Types (Resorts, Villas, Hotels)</option>
+            <option value="Resort">Luxury Resorts</option>
+            <option value="5-Star Hotel">5-Star Historic & Sky Hotels</option>
+            <option value="Private Villa">Private Villas & Atolls</option>
+            <option value="Boutique">Heritage & Cave Boutiques</option>
+          </select>
+        </div>
+
+        <div class="hotel-filter-item">
+          <label for="hotelFilterDest">Destination</label>
+          <select class="hotel-filter-select" id="hotelFilterDest">
+            <option value="all">All Destinations</option>
+            <option value="Switzerland">Switzerland</option>
+            <option value="Dubai">Dubai</option>
+            <option value="Maldives">Maldives</option>
+            <option value="Turkey">Turkey</option>
+            <option value="Paris">Paris</option>
+            <option value="Bali">Bali</option>
+            <option value="Japan">Japan</option>
+            <option value="Pakistan">Pakistan</option>
+          </select>
+        </div>
+
+        <div class="hotel-filter-item">
+          <label for="hotelFilterPrice">Max Nightly Rate</label>
+          <select class="hotel-filter-select" id="hotelFilterPrice">
+            <option value="all">Any Price</option>
+            <option value="800">Under $800 / night</option>
+            <option value="1500">Under $1,500 / night</option>
+            <option value="2500">Under $2,500 / night</option>
+          </select>
+        </div>
+
+        <div class="hotel-filter-item">
+          <label for="hotelFilterRating">Minimum Rating</label>
+          <select class="hotel-filter-select" id="hotelFilterRating">
+            <option value="all">All Ratings</option>
+            <option value="4.95">★ 4.95 & above</option>
+            <option value="4.90">★ 4.90 & above</option>
+          </select>
+        </div>
+
+        <button class="btn btn-sm btn-outline" id="hotelFilterReset" style="height:44px; margin-top:16px;">
+          Reset Filters
+        </button>
+      </div>
+
+      <!-- Hotels Grid (Populated via data.js) -->
+      <div class="hotels-grid" id="hotelsGrid"></div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       9. TRAVEL GALLERY & LIGHTBOX
+       ========================================================================= -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Visual Odyssey</span>
+        <h2 class="section-title">Moments of Pure Wonder</h2>
+        <p class="section-subtitle">
+          Immerse yourself in high-resolution glimpses of pristine alpine peaks, glowing desert sunsets, and private overwater havens captured by Voyanta travelers.
+        </p>
+      </div>
+
+      <!-- Gallery Filter Chips -->
+      <div class="dest-filter-bar">
+        <button class="dest-filter-chip gallery-filter-chip active" data-gallery-cat="all">All Gallery</button>
+        <button class="dest-filter-chip gallery-filter-chip" data-gallery-cat="mountains">Mountains</button>
+        <button class="dest-filter-chip gallery-filter-chip" data-gallery-cat="beaches">Beaches</button>
+        <button class="dest-filter-chip gallery-filter-chip" data-gallery-cat="cities">Cities</button>
+        <button class="dest-filter-chip gallery-filter-chip" data-gallery-cat="hotels">Hotels</button>
+        <button class="dest-filter-chip gallery-filter-chip" data-gallery-cat="culture">Culture</button>
+      </div>
+
+      <!-- Gallery Masonry Grid (Populated via data.js) -->
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal Container -->
+  <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Image Lightbox Viewer">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close Lightbox">&times;</button>
+    <button class="lightbox-nav-btn lightbox-prev" id="lightboxPrev" aria-label="Previous Image">‹</button>
+    <button class="lightbox-nav-btn lightbox-next" id="lightboxNext" aria-label="Next Image">›</button>
+    <div class="lightbox-content">
+      <img class="lightbox-img" id="lightboxImg" src="" alt="Enlarged gallery photo">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       10. CLIENT TESTIMONIALS (Carousel)
+       ========================================================================= -->
+  <section class="reviews-section" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Peerless Reputation</span>
+        <h2 class="section-title">Words from Our Voyagers</h2>
+        <p class="section-subtitle">
+          Hear from visionary founders, architectural directors, and discerning international travelers who entrust their sacred personal time to Voyanta.
+        </p>
+      </div>
+
+      <div class="reviews-carousel-wrapper">
+        <div class="reviews-track" id="reviewsTrack">
+          <!-- Populated via data.js -->
+        </div>
+        <div class="carousel-nav-dots" id="reviewsDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       11. SPECIAL LIMITED OFFER PROMOTION
+       ========================================================================= -->
+  <section class="special-offer-section" id="offers">
+    <div class="container">
+      <div class="offer-card-banner">
+        <div>
+          <span class="offer-badge">✦ Exclusive Time-Limited Privilege</span>
+          <h2 class="offer-title">Your Next Adventure Starts Here</h2>
+          <p class="offer-desc">
+            Save 20% on selected Swiss Alpine and Maldives sanctuaries. Includes complimentary airport helicopter transfer and private vineyard dinners when reserved this week.
+          </p>
+          <button class="btn btn-gold" id="offerCtaBtn">
+            Claim Exclusive Offer ✦
+          </button>
+        </div>
+
+        <!-- Live 48h Countdown Timer -->
+        <div class="offer-countdown-box">
+          <div class="countdown-title">Special Privilege Expires In:</div>
+          <div class="countdown-grid">
+            <div class="countdown-unit">
+              <div class="countdown-num" id="countDays">02</div>
+              <div class="countdown-lbl">Days</div>
+            </div>
+            <div class="countdown-unit">
+              <div class="countdown-num" id="countHours">14</div>
+              <div class="countdown-lbl">Hours</div>
+            </div>
+            <div class="countdown-unit">
+              <div class="countdown-num" id="countMins">35</div>
+              <div class="countdown-lbl">Mins</div>
+            </div>
+            <div class="countdown-unit">
+              <div class="countdown-num" id="countSecs">12</div>
+              <div class="countdown-lbl">Secs</div>
+            </div>
+          </div>
+          <div class="promo-code-pill">
+            <span class="promo-code-text">VOYANTA-SUMMER</span>
+            <button class="promo-copy-btn" id="copyPromoBtn">Copy Code</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       12. FREQUENTLY ASKED QUESTIONS (Accordion)
+       ========================================================================= -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Clarity & Confidence</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">
+          Everything you need to know regarding private concierge bookings, flight logistics, flexibility assurances, and bespoke customization.
+        </p>
+      </div>
+
+      <div class="faq-accordion-list" id="faqList">
+        <!-- Populated via data.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       13. CONTACT PAGE & MAP VISUAL
+       ========================================================================= -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Private Concierge Desk</span>
+        <h2 class="section-title">Begin Your Bespoke Journey</h2>
+        <p class="section-subtitle">
+          Connect directly with our senior travel curators to discuss tailored private departures, luxury charters, or exclusive corporate retreats.
+        </p>
+      </div>
+
+      <div class="contact-layout-grid">
+        <!-- Contact Information Card -->
+        <div class="contact-info-card">
+          <h3 class="contact-info-title">Global Headquarters</h3>
+          <p class="contact-info-desc">
+            Our concierge team is available 24 hours a day, 7 days a week, across our primary desks in New York, Zurich, and Dubai.
+          </p>
+
+          <div class="contact-detail-row">
+            <div class="contact-detail-icon">📍</div>
+            <div class="contact-detail-text">
+              <h5>Address</h5>
+              <p>450 Park Avenue, 28th Floor, New York, NY 10022</p>
+            </div>
+          </div>
+
+          <div class="contact-detail-row">
+            <div class="contact-detail-icon">📞</div>
+            <div class="contact-detail-text">
+              <h5>Direct Phone</h5>
+              <p>+1 (800) 869-2682 / +41 22 819 9200</p>
+            </div>
+          </div>
+
+          <div class="contact-detail-row">
+            <div class="contact-detail-icon">✉️</div>
+            <div class="contact-detail-text">
+              <h5>Private Desk</h5>
+              <p>concierge@voyanta-luxury.com</p>
+            </div>
+          </div>
+
+          <div class="contact-detail-row">
+            <div class="contact-detail-icon">🕒</div>
+            <div class="contact-detail-text">
+              <h5>Hours of Operation</h5>
+              <p>24/7 Dedicated High-Priority Client Access</p>
+            </div>
+          </div>
+
+          <!-- Stylized Interactive Map Box -->
+          <div class="map-visual-box" title="Voyanta Global Headquarters Map">
+            <div class="map-pin-pill">📍 Voyanta Headquarters • Park Ave</div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-card">
+          <h3 class="contact-form-title">Send Us Your Travel Vision</h3>
+          <form id="contactForm">
+            <div class="form-grid-2">
+              <div class="form-field">
+                <label for="contactName">Full Name *</label>
+                <input type="text" class="form-input" id="contactName" placeholder="e.g. Lord Alexander Wright" required>
+              </div>
+              <div class="form-field">
+                <label for="contactEmail">Email Address *</label>
+                <input type="email" class="form-input" id="contactEmail" placeholder="e.g. alexander@wright.com" required>
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-field">
+                <label for="contactPhone">Phone Number</label>
+                <input type="tel" class="form-input" id="contactPhone" placeholder="+1 (555) 000-0000">
+              </div>
+              <div class="form-field">
+                <label for="contactDest">Destination of Interest</label>
+                <select class="form-select" id="contactDest">
+                  <option value="Switzerland">Switzerland Alpine Escape</option>
+                  <option value="Dubai">Dubai Ultramodern Royal</option>
+                  <option value="Maldives">Maldives Overwater Sanctuary</option>
+                  <option value="Turkey">Turkey & Cappadocia Imperial</option>
+                  <option value="Japan">Japan Cherry Blossom Voyage</option>
+                  <option value="Pakistan">Karakoram & Hunza Expedition</option>
+                  <option value="Custom">Custom Bespoke Multiple Continents</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="contactMessage">Describe Your Dream Itinerary *</label>
+              <textarea class="form-textarea" id="contactMessage" placeholder="Tell us about your preferred travel dates, style, party size, and any special requests (private jet, Michelin dining, spa suites)..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%; padding:14px; font-size:1.05rem;">
+              Send Message to Concierge →
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       14. USER DASHBOARD MODAL
+       ========================================================================= -->
+  <div class="dashboard-modal" id="dashboardModal" role="dialog" aria-modal="true" aria-label="User Dashboard">
+    <div class="dashboard-window">
+      <!-- Sidebar -->
+      <aside class="dash-sidebar">
+        <div>
+          <div class="dash-user-profile">
+            <img class="dash-user-avatar" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Member Avatar">
+            <div>
+              <h4 style="font-size:1rem; font-weight:800;">Lady Eleanor Vance</h4>
+              <span style="font-size:0.75rem; color:var(--color-gold);">Voyanta Black Member</span>
+            </div>
+          </div>
+
+          <nav>
+            <div class="dash-nav-item active" data-tab="bookings">
+              <span>📋</span> <span>My Bookings</span>
+            </div>
+            <div class="dash-nav-item" data-tab="wishlist">
+              <span>♡</span> <span>Curated Wishlist</span>
+            </div>
+            <div class="dash-nav-item" data-tab="profile">
+              <span>⚙️</span> <span>Concierge Preferences</span>
+            </div>
+            <div class="dash-nav-item" data-tab="notifications">
+              <span>🔔</span> <span>Notifications</span>
+            </div>
+          </nav>
+        </div>
+
+        <div>
+          <p style="font-size:0.78rem; color:rgba(255,255,255,0.5);">Concierge PIN: #VY-90218</p>
+        </div>
+      </aside>
+
+      <!-- Main Panel Area -->
+      <main class="dash-main-area">
+        <div class="dash-header-row">
+          <h2 style="font-size:1.6rem; font-weight:800; color:var(--color-primary);" id="dashHeaderTitle">Voyanta Member Portal</h2>
+          <button class="modal-close-btn" id="dashboardCloseBtn" style="position:static;" aria-label="Close Dashboard">&times;</button>
+        </div>
+
+        <!-- Tab 1: Bookings -->
+        <div class="dash-tab-panel active" id="dashTabBookings">
+          <h3 style="font-size:1.2rem; font-weight:700; margin-bottom:16px;">Active & Upcoming Journeys</h3>
+          <div id="dashBookingsList">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+
+        <!-- Tab 2: Wishlist -->
+        <div class="dash-tab-panel" id="dashTabWishlist">
+          <h3 style="font-size:1.2rem; font-weight:700; margin-bottom:16px;">Saved Destinations & Packages</h3>
+          <div id="dashWishlistList">
+            <!-- Rendered dynamically -->
+          </div>
+        </div>
+
+        <!-- Tab 3: Profile Preferences -->
+        <div class="dash-tab-panel" id="dashTabProfile">
+          <h3 style="font-size:1.2rem; font-weight:700; margin-bottom:16px;">Member Travel Profile</h3>
+          <div style="background:var(--color-bg-light); border-radius:var(--radius-md); padding:20px; border:1px solid var(--color-border); margin-bottom:16px;">
+            <p><strong>Primary Passport:</strong> United Kingdom (Diplomatic/Standard)</p>
+            <p style="margin-top:6px;"><strong>Dietary Requirements:</strong> Caviar service, Organic Farm-to-table, Nut-free</p>
+            <p style="margin-top:6px;"><strong>Preferred Air Cabin:</strong> First Class / Private Jet Charter</p>
+            <p style="margin-top:6px;"><strong>Dedicated Concierge:</strong> Julian Mercer (Senior Partner)</p>
+          </div>
+          <button class="btn btn-sm btn-outline">Update Profile Data</button>
+        </div>
+
+        <!-- Tab 4: Notifications -->
+        <div class="dash-tab-panel" id="dashTabNotifications">
+          <h3 style="font-size:1.2rem; font-weight:700; margin-bottom:16px;">Recent Concierge Updates</h3>
+          <div class="dash-trip-card">
+            <div>
+              <span class="dest-card-badge" style="position:static; padding:2px 8px; font-size:0.7rem;">New Offer</span>
+              <h4 style="font-size:1rem; font-weight:700; margin-top:4px;">Private Helicopter Transfer Confirmed</h4>
+              <p style="font-size:0.82rem; color:var(--color-text-muted);">Zurich Kloten Airport to Zermatt Heliport has been scheduled for your upcoming stay.</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       15. QUICK BOOKING & RESERVATION MODAL
+       ========================================================================= -->
+  <div class="modal-overlay" id="bookingModal" role="dialog" aria-modal="true" aria-label="Book Trip Reservation">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="bookingModalClose" aria-label="Close Modal">&times;</button>
+      <span style="font-size:0.8rem; font-weight:700; color:var(--color-accent); text-transform:uppercase;">Private Reservation Desk</span>
+      <h2 class="modal-title" id="bookingItemTitle">Reserve Luxury Journey</h2>
+      <div style="font-size:1.2rem; font-weight:800; color:var(--color-gold); margin-bottom:20px;" id="bookingItemPrice">$4,290 / person</div>
+
+      <form id="bookingForm">
+        <div class="form-grid-2">
+          <div class="form-field">
+            <label for="bkName">Lead Traveler Name *</label>
+            <input type="text" class="form-input" id="bkName" placeholder="Full Name" required>
+          </div>
+          <div class="form-field">
+            <label for="bkEmail">Email Address *</label>
+            <input type="email" class="form-input" id="bkEmail" placeholder="Email" required>
+          </div>
+        </div>
+
+        <div class="form-grid-2">
+          <div class="form-field">
+            <label for="bkPhone">Direct Contact / WhatsApp *</label>
+            <input type="tel" class="form-input" id="bkPhone" placeholder="+1 (555) 000-0000" required>
+          </div>
+          <div class="form-field">
+            <label for="bkGuests">Number of Guests</label>
+            <select class="form-select" id="bkGuests">
+              <option value="1">1 Guest</option>
+              <option value="2" selected>2 Guests</option>
+              <option value="3">3 Guests</option>
+              <option value="4">4 Guests</option>
+              <option value="5+">5+ Guests (VIP Suite)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="bkDate">Anticipated Departure Date *</label>
+          <input type="date" class="form-input" id="bkDate" value="2026-10-15" required>
+        </div>
+
+        <div class="form-field">
+          <label for="bkPayment">Preferred Settlement Method</label>
+          <select class="form-select" id="bkPayment">
+            <option value="amex">American Express Centurion / Platinum</option>
+            <option value="visa">Visa Infinite / Mastercard World Elite</option>
+            <option value="wire">Bank Wire Transfer (USD / EUR / GBP)</option>
+            <option value="escrow">Bonded Digital Escrow Service</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-gold" style="width:100%; padding:14px; font-size:1.05rem; margin-top:10px;">
+          Confirm Booking Request & Assign Concierge ✦
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       16. GENERIC DETAIL MODAL (Destinations, Packages, Hotels)
+       ========================================================================= -->
+  <div class="modal-overlay" id="detailModal" role="dialog" aria-modal="true" aria-label="Item Details">
+    <div class="modal-card" style="max-width:720px;">
+      <button class="modal-close-btn" id="detailModalClose" aria-label="Close Details">&times;</button>
+      <div id="detailModalBody">
+        <!-- Rendered dynamically via app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       17. TOAST NOTIFICATION CONTAINER & SCROLL TO TOP BUTTON
+       ========================================================================= -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+  <button class="scroll-top-btn" id="scrollTopBtn" title="Scroll back to top" aria-label="Scroll to top">↑</button>
+
+  <!-- =========================================================================
+       18. ULTRA-PREMIUM GLOBAL FOOTER
+       ========================================================================= -->
+  <footer class="footer-main">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand Col -->
+        <div class="footer-brand-info">
+          <a href="#hero" class="brand-logo" style="margin-bottom:12px;">
+            <span class="logo-mark">V</span>
+            <span>Voyanta<span class="gold-dot">.</span></span>
+          </a>
+          <p>
+            Voyanta is the definitive international luxury travel brand creating handcrafted expeditions, 5-star sanctuary retreats, private yacht charters, and bespoke itineraries across six continents.
+          </p>
+          <div class="footer-social-row">
+            <a href="#contact" class="social-icon-btn" aria-label="Instagram">📸</a>
+            <a href="#contact" class="social-icon-btn" aria-label="Twitter">🐦</a>
+            <a href="#contact" class="social-icon-btn" aria-label="LinkedIn">💼</a>
+            <a href="#contact" class="social-icon-btn" aria-label="YouTube">▶️</a>
+          </div>
+        </div>
+
+        <!-- Destinations Col -->
+        <div>
+          <h4 class="footer-col-title">Signature Sanctuaries</h4>
+          <ul class="footer-links-list">
+            <li><a href="#destinations" class="footer-link">Switzerland Alps</a></li>
+            <li><a href="#destinations" class="footer-link">Dubai Ultramodern</a></li>
+            <li><a href="#destinations" class="footer-link">Maldives Overwater</a></li>
+            <li><a href="#destinations" class="footer-link">Kyoto & Tokyo, Japan</a></li>
+            <li><a href="#destinations" class="footer-link">Hunza Valley, Pakistan</a></li>
+            <li><a href="#destinations" class="footer-link">Cappadocia, Turkey</a></li>
+          </ul>
+        </div>
+
+        <!-- Quick Links Col -->
+        <div>
+          <h4 class="footer-col-title">Voyanta Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="#packages" class="footer-link">Signature Tour Packages</a></li>
+            <li><a href="#planner" class="footer-link">Interactive Trip Planner</a></li>
+            <li><a href="#hotels" class="footer-link">5-Star Luxury Hotels</a></li>
+            <li><a href="#experiences" class="footer-link">Private Charters & Heli-Tours</a></li>
+            <li><a href="#faq" class="footer-link">Cancellation Guarantee</a></li>
+            <li><a href="#contact" class="footer-link">Private Concierge Desk</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter Col -->
+        <div>
+          <h4 class="footer-col-title">The Voyanta Journal</h4>
+          <p style="font-size:0.88rem; color:rgba(255,255,255,0.7); margin-bottom:14px;">
+            Receive exclusive invitations to private island openings, seasonal yacht itineraries, and culinary galas.
+          </p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); VoyantaApp.showToast('Thank you for subscribing to The Voyanta Journal', 'gold', '💌'); this.reset();">
+            <div class="newsletter-input-box">
+              <input type="email" class="newsletter-input" placeholder="Your private email..." required>
+              <button type="submit" class="btn btn-sm btn-gold">Subscribe</button>
+            </div>
+            <span style="font-size:0.72rem; color:rgba(255,255,255,0.5);">Zero spam. Only hand-curated expeditions.</span>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom Legal Row -->
+      <div class="footer-bottom-bar">
+        <div>
+          © 2026 Voyanta Luxury Travel Group Ltd. All Rights Reserved.
+        </div>
+        <div style="display:flex; gap:20px;">
+          <a href="#contact" class="footer-link">Privacy Policy</a>
+          <a href="#contact" class="footer-link">Terms of Luxury Service</a>
+          <a href="#contact" class="footer-link">Bonded Escrow Guarantee</a>
+          <a href="#contact" class="footer-link">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Master Application Scripts -->
+  <script src="./data.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
